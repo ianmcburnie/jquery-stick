@@ -1,6 +1,6 @@
 {
   "name": "jquery-stick",
-  "description": "jQuery plugin that sticks the given fixed position element to any another element",
+  "description": "jQuery plugin that will stick an absolutely positioned or fixed positioned elements relatively to ancestor or viewport respectively",
   "version": "0.0.1",
   "scripts": {
     "prepublish": "npm run clean && npm run lint && npm run build",
