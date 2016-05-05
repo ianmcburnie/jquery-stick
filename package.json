@@ -1,0 +1,47 @@
+{
+  "name": "jquery-stick",
+  "description": "jQuery plugin that sticks the given fixed position element to any another element",
+  "version": "0.0.1",
+  "scripts": {
+    "prepublish": "npm run clean && npm run lint && npm run build",
+    "lint": "eslint jquery.stick.js > lint.txt",
+    "fix": "eslint jquery.stick.js --fix",
+    "minify": "jsmin -o jquery.stick.min.js jquery.stick.js",
+    "build": "npm run clean && npm run lasso && npm run minify",
+    "clean": "rimraf *.min.js lint.txt",
+    "lasso": "lasso browser.json --output-dir ./ --minify"
+  },
+  "pre-commit": [
+    "clean",
+    "lint",
+    "build"
+  ],
+  "author": "Ian McBurnie <ianmcburnie@hotmail.com>",
+  "homepage": "https://github.com/ianmcburnie/jquery-stick",
+  "bugs": {
+    "url": "https://github.com/ianmcburnie/jquery-stick/issues"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "accessibility",
+    "a11y",
+    "wai-aria"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ianmcburnie/jquery-stick.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "eslint-config-google": "^0.4.0",
+    "jquery": "^2.2.3",
+    "jsmin": "^1.0.1",
+    "pre-commit": "^1.1.2",
+    "rimraf": "^2.4.4"
+  },
+  "peerDependencies": {
+    "jquery": ">=1.11 < 3"
+  }
+}
