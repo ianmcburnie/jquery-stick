@@ -40,5 +40,8 @@
   },
   "peerDependencies": {
     "jquery": ">=1.11"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
