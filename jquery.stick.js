@@ -1,7 +1,7 @@
 /**
 * @file jQuery plugin that will stick an absolutely positioned or fixed positioned elements relatively to ancestor or viewport respectively.
 * @author Ian McBurnie <ianmcburnie@hotmail.com>
-* @version 0.0.2
+* @version 0.1.0
 * @requires jquery
 */
 (function($) {
